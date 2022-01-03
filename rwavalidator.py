@@ -23,9 +23,17 @@ def isNationalId(id):
         return "Input should be string"
 
 def isPhoneNumber(number):
-    pattern = r'^(\+?25)?(078|075|073|072)\d{7}$'
+    pattern = r'^(\+?25)?(079|078|075|073|072)\d{7}$'
     regex = re.compile(pattern)
     match = regex.search(number)
     if not match:
         return False;
     return True
+def isTinNumber(number):
+    pattern = r'^(1|0)\d{8}$'
+    regex = re.compile(pattern)
+    match = regex.search(number)
+    if not match:
+        return False;
+    return True
+    
