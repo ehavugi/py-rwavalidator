@@ -34,3 +34,20 @@ isPhoneNumber("0778854444"); # false
 isNationalId("1199672222000040"); # true
 isNationalId("1201772222000040"); # false
 ```
+
+# Validating TIN Number
+
+```py
+
+isTinNumber("107610474"); # true
+isTinNumber("1000043485"); # false
+```
+
+# Validating Address
+
+```py
+
+isNewAddress("KK 30 rd 8"); # True
+isNewAddress("KT 30 rd 8"); # False
+isNewAddress("KN 30 FM 8"); #False
+```
